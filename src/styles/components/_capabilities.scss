@@ -1,0 +1,108 @@
+.capabilities-section {
+  display: grid;
+  gap: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  padding-inline: 1.25rem;
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top left, rgba(255, 132, 64, 0.16) 0%, transparent 34%),
+    radial-gradient(circle at top right, rgba(102, 194, 255, 0.12) 0%, transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.14);
+}
+
+.capabilities-section__header {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 52rem;
+}
+
+.capabilities-section__eyebrow {
+  margin: 0;
+  color: rgba(255, 209, 184, 0.86);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.capabilities-section__lead {
+  font-size: clamp(1.06rem, 2.3vw, 1.35rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.capabilities-section__grid {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.capabilities-section__card {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  padding: 1.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.085) 0%, rgba(255, 255, 255, 0.03) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04), 0 20px 40px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+
+  h3 {
+    margin: 0;
+    font-size: clamp(1.15rem, 2vw, 1.35rem);
+    line-height: 1.12;
+  }
+
+  p {
+    margin: 0;
+    max-width: 34rem;
+  }
+}
+
+.capabilities-section__label {
+  color: rgba(255, 220, 196, 0.9);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.capabilities-section__icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.9rem;
+  height: 4.9rem;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.capabilities-section__icon {
+  width: 2.7rem;
+  height: 2.7rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width: 768px) {
+  .capabilities-section__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .capabilities-section__card {
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .capabilities-section {
+    padding-inline: 1rem;
+    border-radius: 1.6rem;
+  }
+}
