@@ -1,5 +1,6 @@
 const whatsappHref =
-  "https://wa.me/385000000000?text=Hi%2C%20I%27m%20interested%20in%20a%20custom%20product.";
+  "https://wa.me/385957446227?text=Hi%2C%20I%27m%20interested%20in%20a%20custom%20product.";
+const whatsappDisplay = "095 744 6227";
 const emailHref = "mailto:hello@luckystudio.hr";
 
 const Contact = () => {
@@ -30,7 +31,7 @@ const Contact = () => {
           </span>
           <span className="contact-section__primary-copy">
             <strong>Message on WhatsApp</strong>
-            <span>Fastest way to start a conversation about your idea.</span>
+            <span>{whatsappDisplay}</span>
           </span>
         </a>
 
@@ -51,7 +52,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-section__note">
-          <p>Preview links are placeholders for now and can be swapped for your real contact info.</p>
+          <p>Fastest way to start a conversation about your idea, reference, or custom request.</p>
         </div>
       </div>
     </section>
